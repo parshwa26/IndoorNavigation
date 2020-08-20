@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CenterList">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/english"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40px"
+                    android:layout_margin="20dp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:visibility="invisible"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1">
+                </TextView>
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#FAFAFA"
+                    android:onClick="backButton"
+                    android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/arabic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="3">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="#FAFAFA"
+                    android:baselineAlignBottom="false"
+                    android:onClick="backButton"
+                    android:src="@drawable/ic_arrow_back_black_24dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1">
+                </TextView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40px"
+                    android:layout_margin="20dp"
+                    android:visibility="invisible"
+                    android:background="@android:color/holo_blue_bright"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <SearchView
+                android:id="@+id/search"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:iconifiedByDefault="false">
+                <requestFocus />
+
+            </SearchView>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10dp">
+            </View>
+
+            <ListView
+                android:id="@+id/centerListview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/search"
+                android:divider="@android:color/background_light"
+                android:dividerHeight="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+            </ListView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".SelectLanguage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            app:layout_constraintHorizontal_weight="1"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".9">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight=".1"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    android:layout_marginTop="50px"
+                    android:weightSum="1">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/abudhabimunicipalitylogo2"
+                        android:layout_centerInParent="true"
+                        android:layout_weight=".5"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/yearoftolerancelogo"
+                        android:layout_weight=".5"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:padding="80px"
+                        android:src="@drawable/navigate_logo"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="100px"
+                    android:layout_marginRight="100px"
+                    android:layout_marginTop="30px"
+                    android:weightSum="1"
+                    android:layout_weight=".5">
+
+                    <Button
+                        android:id="@+id/btn_english"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="English"
+                        tools:background="#64a7a2"
+                        android:backgroundTint="#64a7a2"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp"
+                        android:layout_marginRight="40px"
+                        android:layout_weight=".5"
+                        android:onClick="english"/>
+
+                    <Button
+                        android:id="@+id/btn_arebic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="عربى"
+                        android:layout_marginLeft="40px"
+                        android:backgroundTint="#64a7a2"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp"
+                        android:layout_weight=".5"
+                        android:onClick="arebic"/>
+                </LinearLayout>
+                
+                
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            app:layout_constraintHorizontal_weight="1"
+            android:weightSum="9">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:textAlignment="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="50px"
+                    android:layout_marginTop="50px"
+                    android:layout_marginEnd="50px"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/abudhabimunicipalitylogo2" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:layout_marginTop="200px"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="English"
+                    tools:background="#64a7a2"
+                    android:backgroundTint="#64a7a2"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp"
+                    android:onClick="english"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="عربى"
+                    android:backgroundTint="#64a7a2"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp"
+                    android:onClick="arebic"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:textAlignment="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="50px"
+                    android:layout_marginEnd="50px"
+                    android:layout_marginBottom="50px"
+                    android:scaleType="centerInside"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/yearoftolerancelogo" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

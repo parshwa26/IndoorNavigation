@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"> <!-- #64a7a2-->
+        android:layout_marginBottom="3px">
+
+        <FrameLayout
+            android:id="@+id/center_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@android:color/background_light">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+
+                    android:layout_weight="8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/center_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/profile_pic"
+                        android:text=""
+                        android:layout_weight="8"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/din_next_lt_w23_bold"
+                         />
+                    <TextView
+                        android:id="@+id/center_floor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="First Floor"
+                        android:fontFamily="@font/gibson_regular"/>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/center_image"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:contentDescription="desc"/>
+
+                <TextView
+                    android:id="@+id/center_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:textAlignment="center"
+                    android:visibility="gone"
+                    android:text=""/>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"
+                    android:textAlignment="center"
+                    android:text=""/>
+            </LinearLayout>
+
+        </FrameLayout>
+    </FrameLayout>
+
+</LinearLayout>

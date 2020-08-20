@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/title_en"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:paddingTop="45px"
+                    android:textAlignment="viewStart"
+                    android:textSize="30sp"
+                    android:visibility="gone"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:id="@+id/navigate_logo_en"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:src="@drawable/navigate_logo"
+                    android:visibility="gone"
+                    android:layout_weight="3"/>
+
+
+                <ImageView
+                    android:id="@+id/navigate_logo_ar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:src="@drawable/navigate_logo"
+                    android:layout_weight="3"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/title_ar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="40px"
+                    android:text=""
+                    android:paddingTop="45px"
+                    android:textAlignment="viewEnd"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
+        </LinearLayout>
+</android.support.v7.widget.Toolbar>
